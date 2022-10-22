@@ -28,9 +28,6 @@ Install all the dependencies using npm
 
     npm install
 
-Compile all the dependencies using npm
-
-    npm run dev
 
 # Please add APP_URL correct to call api routes
 
@@ -44,6 +41,10 @@ Setup Passport
 
 [passport](https://laravel.com/docs/9.x/passport) set up passport accoding to this url
 
+    php artisan passport:keys
+    php artisan passport:client --personal
+    
+
 Run the database migrations (**Set the database connection in .env before migrating**)
 
     php artisan migrate
@@ -51,6 +52,10 @@ Run the database migrations (**Set the database connection in .env before migrat
 Run the database seeder and you're done
 
     php artisan db:seed
+    
+Compile all the dependencies using npm
+
+    npm run dev
 
 Start the local development server
 
